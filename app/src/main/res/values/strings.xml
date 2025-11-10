@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">banco_horas</string>
+    <string name="nomeCanal">Sua OF esta pronta</string>
+    <string name="descricaoCanal">Sua of esta pronta</string>
+    <string name="enter">ENTER</string>
+    <string name="singnIn">Nao tem uma conta! Crie Aqui</string>
+    <string name="insert">Cadastrar</string>
+    <string name="contatos">contatos</string>
+    <string name="logout">Sair</string>
+    <string name="btn_chat">ENVIAR</string>
+    <string name="message">Digite a Mensagem</string>
+    <string name="registro">Registro</string>
+    <string name="mensagens">Conversas</string>
+    <string name="login">Login</string>
+    <string name="mes">FLEXTIME - Sistema de gestao de Horas</string>
+    <string name="senha">Digite a Senha</string>
+    <string name="email">Digite o E-mail</string>
+    <string name="periodo">Periodo:</string>
+    <string name="departamento">Departamento:</string>
+    <string name="atividade">Atividade:</string>
+    <string name="nome_colaborador">Colaborador:</string>
+    <string name="aprovar">APROVAR</string>
+    <string name="motivo">Motivo</string>
+    <string name="reprovar">REPROVAR</string>
+</resources>
