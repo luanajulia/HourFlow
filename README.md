@@ -1,76 +1,51 @@
-🕒 HourFlow - Sistema de Aprovação de Banco de Horas
-O HourFlow é uma aplicação desenvolvida para simplificar a gestão de horas extras e compensações. O sistema permite que colaboradores registrem suas solicitações e que gestores revisem, aprovem ou reprovem essas horas de forma centralizada e eficiente.
+# 🕒 HourFlow - Gestão de Banco de Horas
 
-🚀 Funcionalidades
-Para Colaboradores
-Registro de Horas: Lançamento de horas extras com descrição da atividade.
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 
-Histórico Pessoal: Visualização do status de todas as solicitações enviadas (Pendente, Aprovado, Reprovado).
+O **HourFlow** é uma solução robusta para o controle e aprovação de banco de horas. O sistema foi desenhado para separar as responsabilidades entre **Colaboradores** (que solicitam) e **Gestores** (que revisam e aprovam), garantindo integridade e transparência nos lançamentos.
 
-Saldo de Banco: Consulta em tempo real do saldo acumulado de horas.
+---
 
-Para Gestores
-Dashboard de Aprovação: Lista consolidada de todas as solicitações pendentes da equipe.
+## 🎯 Objetivo do Projeto
 
-Ações de Gestão: Botões rápidos para aprovar ou reprovar com campo de feedback.
+Eliminar o uso de planilhas manuais para o controle de horas extras, oferecendo uma interface centralizada onde o fluxo de aprovação é automatizado e auditável.
 
-Relatórios: Visualização do total de horas aprovadas por colaborador/período.
+## 👥 Perfis de Usuário
 
-🛠️ Tecnologias Utilizadas
-O projeto utiliza uma arquitetura moderna aproveitando o melhor do ecossistema JVM:
+### 🛠️ Colaborador
+* **Lançamento de Horas:** Registro de entradas/saídas extras com justificativa.
+* **Dashboard de Saldo:** Visualização do total de horas acumuladas vs. compensadas.
+* **Status em Tempo Real:** Acompanhamento se a hora foi aprovada, reprovada ou se ainda está pendente.
 
-Linguagens: Java 21 & Kotlin 1.9 (Interoperabilidade total).
+### 👔 Gestor
+* **Painel de Aprovação:** Visualização de todas as solicitações pendentes da sua equipe.
+* **Fluxo de Decisão:** Aprovação ou reprovação de horas com inserção de comentários/motivações.
+* **Relatórios:** Extração de dados consolidados por período ou por colaborador específico.
 
-Framework: Spring Boot 3.x (Spring Data JPA, Spring Security).
+---
 
-Banco de Dados: PostgreSQL / H2 (para ambiente de desenvolvimento).
+## 🛠️ Stack Tecnológica
 
-Gerenciador de Dependências: Gradle (ou Maven).
+O projeto utiliza a interoperabilidade da JVM para unir a estabilidade do Java com a concisão do Kotlin:
 
-Documentação da API: Swagger/OpenAPI.
+* **Backend:** Spring Boot 3 (Java 21 & Kotlin 1.9)
+* **Persistência:** Spring Data JPA
+* **Segurança:** Spring Security (Controle de acesso por perfis/Roles)
+* **Banco de Dados:** PostgreSQL (Produção) / H2 (Desenvolvimento)
+* **Documentação:** Swagger UI (OpenAPI 3)
 
-🏗️ Estrutura do Projeto
+---
 
-Shutterstock
-O projeto segue o padrão de Arquitetura em Camadas:
+## 🏗️ Arquitetura do Sistema
 
-Controller: Exposição dos endpoints REST.
+A aplicação segue o padrão **RESTful** e uma arquitetura em camadas para facilitar a manutenção e escalabilidade.
 
-Service: Lógica de negócio (regras de aprovação, cálculos de banco).
+---
 
-Repository: Interface de comunicação com o banco de dados.
+## 🚀 Como Executar
 
-Model/Entity: Definição das tabelas e objetos de domínio.
-
-📋 Pré-requisitos
-Antes de começar, você precisará ter instalado em sua máquina:
-
-JDK 21 ou superior.
-
-Android Studio.
-
-PostgreSQL (opcional, caso não use o banco H2 em memória).
-
-🔧 Instalação e Execução
-Clone o repositório:
-
-Bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-Configure as propriedades:
-No arquivo src/main/resources/application.properties, ajuste as credenciais do banco de dados.
-
-Execute a aplicação:
-
-Bash
-./gradlew bootRun
-Acesse a documentação:
-Acesse http://localhost:8080/swagger-ui.html para visualizar e testar os endpoints.
-
-🛣️ Roadmap de Desenvolvimento
-[x] CRUD básico de usuários e perfis (Colaborador/Gestor).
-
-[x] Lógica de submissão de horas em Kotlin.
-
-[ ] Implementação de notificações por e-mail para o gestor.
-
-[ ] Geração de relatório em PDF.
+### Pré-requisitos
+* JDK 21
+* Gradle 8.x ou Maven 3.9+
