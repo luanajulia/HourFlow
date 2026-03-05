@@ -50,4 +50,4 @@ A aplicação segue o padrão **RESTful** e uma arquitetura em camadas para faci
 * JDK 21
 * Gradle 8.x ou Maven 3.9+
 
-##👩‍💻 Autora Desenvolvido com ❤️ por Luana Julia.
+*👩‍💻 Autora Desenvolvido com ❤️ por Luana Julia.*
